@@ -1,0 +1,14 @@
+{% extends "base.html" %} {% block content %}
+{% if messages %}
+{% for m in messages %}
+  <small {% if m.tags %} class="{{m.tags}}" {% endif %}>{{m}}</small>
+{% endfor %}
+{% endif %}
+<div
+  style="height: 90vh; width: 90vw"
+  class="d-flex flex-column justify-content-center align-items-center"
+>
+  <h1>Homepage</h1>
+  <h3>Please Login or Register to use the website.</h3>
+</div>
+{% endblock content %}
